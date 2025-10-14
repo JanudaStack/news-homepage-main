@@ -16,183 +16,135 @@
     </head>
     <body>
         <header class="site-header">
-            <div class="site-header__inner">
-                <a href="/" class="brand" aria-label="W News homepage">
+            <div class="inner__header">
+                <a href="/">
                     <img
                         src="./assets/images/logo.svg"
-                        alt="W."
+                        alt=""
                         class="site__logo"
                     />
                 </a>
-
-                <button
-                    class="menu-toggle"
-                    aria-expanded="false"
-                    aria-controls="primary-nav"
-                    aria-label="Open menu"
-                >
-                    <img src="./assets/images/icon-menu.svg" alt="Menu" />
+                <button class="toggle__button">
+                    <img
+                        src="./assets/images/icon-menu.svg"
+                        alt=""
+                        class="hamburger"
+                    />
                 </button>
-
-                <nav
-                    id="primary-nav"
-                    class="primary-nav"
-                    aria-label="Primary navigation"
-                >
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">New</a></li>
-                        <li><a href="#">Popular</a></li>
-                        <li><a href="#">Trending</a></li>
-                        <li><a href="#">Categories</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
 
         <main>
-            <!-- Hero: primary story -->
-            <section class="hero" aria-labelledby="hero-title">
-                <article class="hero__article">
-                    <figure class="hero__figure">
-                        <img
-                            src="./assets/images/image-web-3-mobile.jpg"
-                            alt="Colorful abstract shapes representing Web 3.0"
-                            class="hero__img"
-                        />
-                    </figure>
-
+            <section>
+                <div class="hero__section">
+                    <img
+                        src="./assets/images/image-web-3-mobile.jpg"
+                        alt=""
+                        class="hero__image"
+                    />
                     <div class="hero__content">
-                        <h1 id="hero-title">The Bright Future of Web 3.0?</h1>
-                        <p class="hero__excerpt">
-                            We dive into the next evolution of the web that
-                            claims to put the power of the platforms back into
-                            the hands of the people. But is it really fulfilling
-                            its promise?
-                        </p>
-                        <a class="btn btn--primary hero__cta" href="#"
-                            >Read more</a
-                        >
+                        <h1 class="hero__header">
+                            The Bright Future of Web 3.0?
+                        </h1>
+                        <div class="hero__paragraph">
+                            <p>
+                                We dive into the next evolution of the web that
+                                claims to put the power if the platforms back
+                                into the hands of the people. But is it really
+                                fulfilling its promise?
+                            </p>
+                            <button class="btn">Read More</button>
+                        </div>
                     </div>
-                </article>
+                </div>
+                <aside class="new-highlights">
+                    <h2 class="new-heading">New</h2>
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <article>
+                                    <h3>Hydrogen VS Electirc Cars</h3>
+                                    <p>
+                                        Will hydrogen-fueled cars ever catch up
+                                        to EVs?
+                                    </p>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <article>
+                                    <h3>The Downsides of AI Artistry</h3>
+                                    <p>
+                                        What are the possible adverse effects of
+                                        on-demand AI image generation?
+                                    </p>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <article>
+                                    <h3>Is VC Funding Drying Up?</h3>
+                                    <p>
+                                        Private funding by VC firms is down 50%
+                                        YOY. We take a look at what that means.
+                                    </p>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
             </section>
-
-            <!-- Complementary highlights (dark panel labeled "New") -->
-            <aside class="new-highlights" aria-labelledby="new-heading">
-                <h2 id="new-heading">New</h2>
-                <ul class="new-highlights__list">
-                    <li class="new-item">
+            <section class="top-list">
+                <ul>
+                    <li>
                         <article>
-                            <h3 class="new-item__title">
-                                <a href="#">Hydrogen VS Electric Cars</a>
-                            </h3>
-                            <p class="new-item__excerpt">
-                                Will hydrogen-fueled cars ever catch up to EVs?
+                            <figure>
+                                <img
+                                    src="./assets/images/image-retro-pcs.jpg"
+                                    alt=""
+                                />
+                            </figure>
+                            <h2>01</h2>
+                            <h3>Reviving Retro PCs</h3>
+                            <p>
+                                What happens when old PCs are given modern
+                                upgrades?
                             </p>
                         </article>
                     </li>
-                    <li class="new-item">
+                    <li>
                         <article>
-                            <h3 class="new-item__title">
-                                <a href="#">The Downsides of AI Artistry</a>
-                            </h3>
-                            <p class="new-item__excerpt">
-                                What are the possible adverse effects of
-                                on-demand AI image generation?
-                            </p>
+                            <figure>
+                                <img
+                                    src="./assets/images/image-top-laptops.jpg"
+                                    alt=""
+                                />
+                            </figure>
+                            <h2>02</h2>
+                            <h3>Top 10 Laptops of 2022</h3>
+                            <p>Our best picks for various needs and budgets.</p>
                         </article>
                     </li>
-                    <li class="new-item">
+                    <li>
                         <article>
-                            <h3 class="new-item__title">
-                                <a href="#">Is VC Funding Drying Up?</a>
-                            </h3>
-                            <p class="new-item__excerpt">
-                                Private funding by VC firms is down 50% YOY. We
-                                take a look at what that means.
+                            <figure>
+                                <img
+                                    src="./assets/images/image-retro-pcs.jpg"
+                                    alt=""
+                                />
+                            </figure>
+                            <h2>03</h2>
+                            <h3>The Growth of Gaming</h3>
+                            <p>
+                                How the pandemic has sparked fresh
+                                opportunities.
                             </p>
                         </article>
                     </li>
                 </ul>
-            </aside>
-
-            <!-- Numbered short list of top stories -->
-            <section class="top-stories" aria-labelledby="top-stories-heading">
-                <h2 id="top-stories-heading" class="visually-hidden">
-                    Top stories
-                </h2>
-                <ol class="top-stories__list">
-                    <li>
-                        <article class="top-story">
-                            <figure class="top-story__figure">
-                                <img
-                                    src="./assets/images/image-retro-pcs.jpg"
-                                    alt="Vintage personal computers"
-                                />
-                            </figure>
-                            <div class="top-story__meta">
-                                <span class="top-story__index">01</span>
-                                <h3 class="top-story__title">
-                                    <a href="#">Reviving Retro PCs</a>
-                                </h3>
-                                <p class="top-story__excerpt">
-                                    What happens when old PCs are given modern
-                                    upgrades?
-                                </p>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="top-story">
-                            <figure class="top-story__figure">
-                                <img
-                                    src="./assets/images/image-top-laptops.jpg"
-                                    alt="Laptop keyboard close-up"
-                                />
-                            </figure>
-                            <div class="top-story__meta">
-                                <span class="top-story__index">02</span>
-                                <h3 class="top-story__title">
-                                    <a href="#">Top 10 Laptops of 2022</a>
-                                </h3>
-                                <p class="top-story__excerpt">
-                                    Our best picks for various needs and
-                                    budgets.
-                                </p>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="top-story">
-                            <figure class="top-story__figure">
-                                <img
-                                    src="./assets/images/image-gaming-growth.jpg"
-                                    alt="Gaming controller in hand"
-                                />
-                            </figure>
-                            <div class="top-story__meta">
-                                <span class="top-story__index">03</span>
-                                <h3 class="top-story__title">
-                                    <a href="#">The Growth of Gaming</a>
-                                </h3>
-                                <p class="top-story__excerpt">
-                                    How the pandemic has sparked fresh
-                                    opportunities.
-                                </p>
-                            </div>
-                        </article>
-                    </li>
-                </ol>
             </section>
         </main>
-
-        <footer class="site-footer">
-            <div class="site-footer__inner">
-                <p>
-                    &copy; <span id="year">2025</span> W News. All rights
-                    reserved.
-                </p>
-            </div>
-        </footer>
     </body>
 </html>
