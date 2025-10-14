@@ -16,21 +16,37 @@
     </head>
     <body>
         <header class="site-header">
-            <div class="inner__header">
+            <div class="site-header__inner">
                 <a href="/">
                     <img
                         src="./assets/images/logo.svg"
-                        alt=""
+                        alt="W."
                         class="site__logo"
                     />
                 </a>
-                <button class="toggle__button">
-                    <img
-                        src="./assets/images/icon-menu.svg"
-                        alt=""
-                        class="hamburger"
-                    />
+
+                <button
+                    class="menu-toggle"
+                    aria-expanded="false"
+                    aria-controls="primary-nav"
+                    aria-label="Open menu"
+                >
+                    <img src="./assets/images/icon-menu.svg" alt="Menu" />
                 </button>
+
+                <nav
+                    id="primary-nav"
+                    class="primary-nav"
+                    aria-label="Primary navigation"
+                >
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
