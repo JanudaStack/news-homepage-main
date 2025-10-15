@@ -61,6 +61,22 @@ button {
 
 .primary-nav {
     display: none;
+}
+
+/* .primary-nav ul {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+} */
+
+.primary-nav ul li a {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.mobile-navigation {
+    display: none;
     position: absolute;
     background-color: white;
     padding: 2rem;
@@ -70,21 +86,25 @@ button {
     right: 0;
 }
 
-.primary-nav ul {
-    margin-top: 7rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.primary-nav ul li a {
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
 .menu-close {
     position: absolute;
     top: 2rem;
     right: 0;
     margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-nav {
+        display: block;
+    }
+
+    .desktop-navigation ul {
+        display: flex;
+        gap: 2rem;
+        font-size: 0.9rem;
+    }
 }

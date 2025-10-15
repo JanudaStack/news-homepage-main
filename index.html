@@ -49,19 +49,31 @@
                     class="primary-nav"
                     aria-label="Primary navigation"
                 >
-                    <button class="menu-close" aria-label="Close menu">
-                        <img
-                            src="./assets/images/icon-menu-close.svg"
-                            alt="Close icon"
-                        />
-                    </button>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">New</a></li>
-                        <li><a href="#">Popular</a></li>
-                        <li><a href="#">Trending</a></li>
-                        <li><a href="#">Categories</a></li>
-                    </ul>
+                    <div class="mobile-navigation">
+                        <button class="menu-close" aria-label="Close menu">
+                            <img
+                                src="./assets/images/icon-menu-close.svg"
+                                alt="Close icon"
+                            />
+                        </button>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Popular</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Categories</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="desktop-navigation">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Popular</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Categories</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -69,13 +81,17 @@
         <main>
             <section class="hero" aria-labelledby="hero-title">
                 <div class="hero__article">
-                    <figure class="hero__figure">
+                    <picture class="hero__figure">
+                        <source
+                            srcset="./assets/images/image-web-3-desktop.jpg"
+                            media="(min-width: 720px)"
+                        />
                         <img
                             src="./assets/images/image-web-3-mobile.jpg"
                             alt=""
                             class="hero__image"
                         />
-                    </figure>
+                    </picture>
 
                     <div class="hero__content">
                         <h1 id="hero-title">The Bright Future of Web 3.0?</h1>
@@ -212,5 +228,7 @@
                 </p>
             </div>
         </footer>
+
+        <script src="./script.js"></script>
     </body>
 </html>
