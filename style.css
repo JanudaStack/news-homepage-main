@@ -1,3 +1,14 @@
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    /* Neutral */
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -106,5 +117,32 @@ button {
         display: flex;
         gap: 2rem;
         font-size: 0.9rem;
+    }
+}
+
+.hero__content {
+    margin: 1.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero__excerpt p {
+    padding: 1rem 0;
+}
+
+.hero__cta {
+    background-color: var(--soft-red);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.hero__cta:hover {
+    background-color: hsl(5, 73%, 52%);
+}
+
+@media (min-width: 768px) {
+    .hero__content {
+        grid-template-columns: 1fr 1fr;
     }
 }
