@@ -185,3 +185,34 @@ button {
         margin: 0;
     }
 }
+
+/* top-stories */
+.top-stories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.top-stories__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.top-story {
+    display: flex;
+}
+
+.top-story__index {
+    color: var(--soft-red);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.top-story__excerpt {
+    color: var(--dark-grayish-blue);
+}
+
+.top-story__figure img {
+    max-width: 90%;
+}
