@@ -216,3 +216,10 @@ button {
 .top-story__figure img {
     max-width: 90%;
 }
+
+/* Footer */
+
+.site-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
