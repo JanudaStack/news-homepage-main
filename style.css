@@ -146,6 +146,12 @@ button {
     .hero__content {
         grid-template-columns: 1fr 1fr;
     }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1.5rem;
+    }
 }
 
 /* Highlights */
@@ -172,4 +178,10 @@ button {
 
 .new-item__excerpt {
     color: var(--grayish-blue);
+}
+
+@media (min-width: 768px) {
+    .new-highlights {
+        margin: 0;
+    }
 }
