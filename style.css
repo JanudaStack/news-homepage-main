@@ -152,6 +152,14 @@ button {
         grid-template-columns: 2fr 1fr;
         grid-gap: 1.5rem;
     }
+
+    #hero-title {
+        margin-right: 2rem;
+    }
+
+    .hero__excerpt p {
+        padding-top: 0;
+    }
 }
 
 /* Highlights */
@@ -215,6 +223,15 @@ button {
 
 .top-story__figure img {
     max-width: 90%;
+}
+
+@media (min-width: 768px) {
+    .top-stories {
+        margin-top: 5rem;
+    }
+    .top-stories__list {
+        flex-direction: row;
+    }
 }
 
 /* Footer */
