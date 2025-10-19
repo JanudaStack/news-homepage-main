@@ -89,7 +89,7 @@ button {
 .mobile-navigation {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: var(--off-white);
     padding: 2rem;
     width: 65%;
     height: 100vh;
@@ -117,6 +117,10 @@ button {
         display: flex;
         gap: 2rem;
         font-size: 0.9rem;
+    }
+
+    .site-header {
+        padding: 1rem 0 3rem;
     }
 }
 
@@ -191,6 +195,7 @@ button {
 @media (min-width: 768px) {
     .new-highlights {
         margin: 0;
+        padding: 1.5rem 2rem;
     }
 }
 
@@ -239,4 +244,10 @@ button {
 .site-footer {
     margin-top: 2rem;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .site-footer__inner p {
+        padding: 4rem 0 2rem;
+    }
 }
